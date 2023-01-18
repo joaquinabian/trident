@@ -1,0 +1,12 @@
+[server]
+host = 0.0.0.0
+port = 7125
+klippy_uds_address = /tmp/klippy_uds
+
+[machine]
+provider = systemd_cli
+
+[authorization]
+trusted_clients = 
+	127.0.0.1
+
