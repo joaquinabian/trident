@@ -64,11 +64,19 @@ grab_version(){
 
 push_config(){
   cd $config_folder
+<<<<<<< HEAD
+  git pull origin main
+  git add .
+  current_date=$(date +"%Y-%m-%d %T")
+  git commit -m "Autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"
+  git push origin main
+=======
   git pull origin master
   git add .
   current_date=$(date +"%Y-%m-%d %T")
   git commit -m "Autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"
   git push origin master
+>>>>>>> cda8dd38acb7b89b188decefe48885adae6b5ac7
 }
 
 grab_version
